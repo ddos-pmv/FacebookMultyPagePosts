@@ -1,0 +1,30 @@
+[
+	{
+		"id": 1,
+		"priority": 1,
+		"action": { "type": "block" },
+		"condition": {
+			"requestBody": {
+				"formData": {
+					"variables": [{ "includes": "m34essga4ge" }]
+				}
+			},
+			"urlFilter": "*facebook.com/api/*",
+			"resourceTypes": ["xmlhttprequest"],
+			"methods": ["POST"]
+		}
+	}
+]
+
+//объявление в манифесте
+// "declarative_net_request": {
+// 	"rule_resources": [
+// 		{
+// 			"id": "block-facebook-posts",
+// 			"enabled": false,
+// 			"path": "ext/rules.json"
+// 		}
+// 	]
+// },
+//prmissions "declarativeNetRequest",
+//"declarativeNetRequestFeedback",
